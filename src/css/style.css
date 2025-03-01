@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 
+ul, ol { list-style: none; padding: 0; margin: 0; }
+
 @font-face {
     font-family: "Oswald";
-    src: url("/fonts/Oswald-VariableFont_wght.ttf") format("ttf");
+    src: url("src/fonts/Oswald-VariableFont_wght.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -18,6 +20,9 @@ body {
 }
 
 .header {
+    width: 1440px;
+}
+.header__container {
     display: flex;
     justify-content: space-between;
 }
@@ -35,14 +40,14 @@ body {
     justify-content: space-around;
 }
 
-.nav__link a {
+.nav__link {
     text-decoration: none;
     color: white;
     font-size: 20px;
     text-transform: uppercase;
 }
 
-.nav__link a:hover {
+.nav__link:hover {
     text-decoration: underline;
 }
 
