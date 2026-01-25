@@ -1,0 +1,966 @@
+@import url(reset.css);
+/* line 12, ../../../Desktop/cat_energy/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+/* line 15, ../../../Desktop/cat_energy/src/sass/style.sass */
+body {
+  font-family: Oswald, sans-serif;
+}
+
+/* line 19, ../../../Desktop/cat_energy/src/sass/style.sass */
+.container {
+  max-width: 1400px;
+  padding: 0px 110px 0px 110px;
+  margin: 0 auto;
+}
+
+/* line 26, ../../../Desktop/cat_energy/src/sass/style.sass */
+.main-section__container {
+  min-height: 700px;
+  padding-top: 50px;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)) right/50% 100% no-repeat, url("/src/img/index-background-desktop 1.png") right/50% 100% no-repeat;
+}
+
+/* line 30, ../../../Desktop/cat_energy/src/sass/style.sass */
+.main-section__header-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* line 34, ../../../Desktop/cat_energy/src/sass/style.sass */
+.main-section__content {
+  display: flex;
+}
+
+/* line 36, ../../../Desktop/cat_energy/src/sass/style.sass */
+.main-section__content-info {
+  padding-left: 80px;
+  padding-top: 110px;
+}
+
+/* line 39, ../../../Desktop/cat_energy/src/sass/style.sass */
+.main-section__content-img {
+  padding-top: 30px;
+}
+
+/* line 41, ../../../Desktop/cat_energy/src/sass/style.sass */
+.main-section__title {
+  margin-bottom: 40px;
+}
+
+/* line 43, ../../../Desktop/cat_energy/src/sass/style.sass */
+.main-section__caption {
+  margin-bottom: 50px;
+}
+
+/* line 45, ../../../Desktop/cat_energy/src/sass/style.sass */
+.main-section__header-mobile {
+  display: none;
+}
+
+/* line 49, ../../../Desktop/cat_energy/src/sass/style.sass */
+.navigation-menu {
+  display: flex;
+  gap: 35px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+/* line 55, ../../../Desktop/cat_energy/src/sass/style.sass */
+.navigation-menu__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 8px;
+  transition: border-color 0.3s;
+}
+
+/* line 61, ../../../Desktop/cat_energy/src/sass/style.sass */
+.navigation-menu__link:hover {
+  border-bottom-color: #FFFFFF;
+}
+
+/* line 64, ../../../Desktop/cat_energy/src/sass/style.sass */
+.title {
+  font-size: 60px;
+  max-width: 420px;
+}
+
+/* line 68, ../../../Desktop/cat_energy/src/sass/style.sass */
+.caption {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* line 72, ../../../Desktop/cat_energy/src/sass/style.sass */
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  min-height: 55px;
+  color: #FFFFFF;
+  background-color: #68B738;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 83, ../../../Desktop/cat_energy/src/sass/style.sass */
+.button:hover {
+  box-shadow: 1px 1px 1px #F2F2F2;
+}
+
+/* line 85, ../../../Desktop/cat_energy/src/sass/style.sass */
+.button:active {
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+/* line 91, ../../../Desktop/cat_energy/src/sass/style.sass */
+.offers-section__container {
+  display: flex;
+  gap: 80px;
+  padding-top: 80px;
+  margin-bottom: 70px;
+}
+
+/* line 97, ../../../Desktop/cat_energy/src/sass/style.sass */
+.offer-card {
+  max-width: 570px;
+  background-color: #F2F2F2;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* line 104, ../../../Desktop/cat_energy/src/sass/style.sass */
+.offer-card__logo {
+  margin-right: 60px;
+  display: inline-flex;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  background-color: #68B738;
+  border-radius: 50%;
+}
+
+/* line 112, ../../../Desktop/cat_energy/src/sass/style.sass */
+.offer-card__logo-img {
+  max-width: 135px;
+  object-fit: contain;
+}
+
+/* line 115, ../../../Desktop/cat_energy/src/sass/style.sass */
+.offer-card__subtitle {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+/* line 118, ../../../Desktop/cat_energy/src/sass/style.sass */
+.offer-card__description {
+  padding: 40px 0px 25px 0px;
+  font-family: Arial, sans-serif;
+}
+
+/* line 121, ../../../Desktop/cat_energy/src/sass/style.sass */
+.offer-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* line 128, ../../../Desktop/cat_energy/src/sass/style.sass */
+.offer-card_tablet {
+  display: none;
+}
+
+/* line 132, ../../../Desktop/cat_energy/src/sass/style.sass */
+.description-section__heading {
+  margin-bottom: 70px;
+}
+
+/* line 134, ../../../Desktop/cat_energy/src/sass/style.sass */
+.description-section__steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 138, ../../../Desktop/cat_energy/src/sass/style.sass */
+.heading {
+  font-size: 60px;
+}
+
+/* line 142, ../../../Desktop/cat_energy/src/sass/style.sass */
+.step {
+  position: relative;
+  max-width: 250px;
+  height: 240px;
+}
+
+/* line 146, ../../../Desktop/cat_energy/src/sass/style.sass */
+.step__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  background-color: #68B738;
+}
+
+/* line 153, ../../../Desktop/cat_energy/src/sass/style.sass */
+.step__info {
+  padding-top: 30px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  color: #444444;
+}
+
+/* line 158, ../../../Desktop/cat_energy/src/sass/style.sass */
+.step__number {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  z-index: -10;
+}
+
+/* line 166, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-section__container {
+  display: flex;
+  min-height: 640px;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #FFFFFF 25%, #F2F2F2 25%);
+}
+
+/* line 172, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-section__img {
+  object-fit: contain;
+  width: 580px;
+}
+
+/* line 175, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-section__img-mobile {
+  display: none;
+}
+
+/* line 179, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content {
+  width: 50%;
+}
+
+/* line 181, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content__heading {
+  padding-top: 45px;
+}
+
+/* line 183, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content__text {
+  padding-top: 150px;
+  margin-bottom: 70px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  width: 80%;
+}
+
+/* line 189, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content__block {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 162px;
+  height: 77px;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  margin-right: 45px;
+}
+
+/* line 199, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content__block:last-child {
+  margin-right: 0px;
+}
+
+/* line 201, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content__block-value {
+  font-size: 30px;
+  color: #000000;
+}
+
+/* line 204, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content__block-subvalue {
+  position: absolute;
+  color: #444444;
+  bottom: -5px;
+  background-color: #F2F2F2;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* line 213, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content__caption {
+  margin-top: 55px;
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 65px;
+  text-transform: uppercase;
+}
+
+/* line 219, ../../../Desktop/cat_energy/src/sass/style.sass */
+.example-content__caption:last-child {
+  margin-right: 0px;
+}
+
+/* line 226, ../../../Desktop/cat_energy/src/sass/style.sass */
+.location-section__container {
+  height: 400px;
+  background: url("/src/img/map.png");
+  display: flex;
+  align-items: center;
+  gap: 250px;
+}
+
+/* line 233, ../../../Desktop/cat_energy/src/sass/style.sass */
+.information {
+  width: 565px;
+  height: 198px;
+  padding: 60px 80px;
+  background-color: #FFFFFF;
+  display: flex;
+  gap: 80px;
+}
+
+/* line 240, ../../../Desktop/cat_energy/src/sass/style.sass */
+.information p {
+  display: inline-block;
+  max-width: 160px;
+}
+
+/* line 243, ../../../Desktop/cat_energy/src/sass/style.sass */
+.information__caption {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* line 246, ../../../Desktop/cat_energy/src/sass/style.sass */
+.information__address {
+  color: #444444;
+  font-family: Arial, sans-serif;
+}
+
+/* line 250, ../../../Desktop/cat_energy/src/sass/style.sass */
+.footer {
+  background-color: #F2F2F2;
+}
+
+/* line 252, ../../../Desktop/cat_energy/src/sass/style.sass */
+.footer__desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+/* line 257, ../../../Desktop/cat_energy/src/sass/style.sass */
+.footer__socials {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* line 261, ../../../Desktop/cat_energy/src/sass/style.sass */
+.footer__mobile {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  /* line 266, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .container {
+    width: 960px;
+    padding: 0px 50px 0px 50px;
+  }
+  /* line 270, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__container {
+    min-height: 580px;
+  }
+  /* line 272, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header {
+    position: relative;
+    padding-top: 20px;
+    align-items: center;
+    z-index: 50;
+  }
+  /* line 277, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__content-info {
+    padding-left: 0px;
+    padding-top: 80px;
+  }
+  /* line 280, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__content-img {
+    padding-left: 0px;
+    width: 500px;
+  }
+  /* line 284, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .navigation-menu {
+    font-size: 16px;
+  }
+  /* line 287, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offers-section {
+    margin-top: 50px;
+  }
+  /* line 290, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card {
+    min-width: 400px;
+    padding: 35px;
+  }
+  /* line 293, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__subtitle {
+    font-size: 25px;
+  }
+  /* line 295, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__logo {
+    margin-right: 45px;
+  }
+  /* line 297, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__link {
+    gap: 15px;
+  }
+  /* line 300, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .heading {
+    font-size: 50px;
+  }
+  /* line 303, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step {
+    height: 200px;
+    width: 190px;
+  }
+  /* line 306, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step__icon {
+    width: 60px;
+    height: 60px;
+  }
+  /* line 309, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step__info {
+    font-size: 14px;
+  }
+  /* line 311, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step__number {
+    height: 90%;
+  }
+  /* line 315, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-section__container {
+    flex-direction: column;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #F2F2F2 25%);
+  }
+  /* line 318, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-section__img {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  /* line 322, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content {
+    width: 100%;
+  }
+  /* line 324, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__text {
+    padding-top: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /* line 328, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__block-subvalue {
+    background-color: #FFFFFF;
+  }
+  /* line 330, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__price {
+    display: inline-flex;
+  }
+  /* line 333, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .footer {
+    height: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 337, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .container {
+    width: 720px;
+    padding: 0px 30px;
+  }
+  /* line 341, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__container {
+    min-height: 900px;
+    background: none;
+  }
+  /* line 344, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header {
+    padding-top: 25px;
+  }
+  /* line 346, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  /* line 349, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header-logo {
+    width: 175px;
+  }
+  /* line 351, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__content {
+    position: relative;
+  }
+  /* line 353, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__content-info {
+    padding-top: 60px;
+    padding-left: 80px;
+  }
+  /* line 356, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__content-img {
+    position: absolute;
+    z-index: -10;
+    top: 230px;
+    left: 50px;
+    width: 100%;
+  }
+  /* line 364, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offers-section__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* line 368, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card {
+    display: none;
+  }
+  /* line 370, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card_tablet {
+    padding-left: 50px;
+    padding-top: 75px;
+    max-width: 100%;
+    min-height: 370px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  /* line 379, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__info {
+    width: 50%;
+  }
+  /* line 381, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__logo {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 15px;
+  }
+  /* line 385, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__logo-img {
+    max-width: 265px;
+  }
+  /* line 387, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__subtitle {
+    font-size: 36px;
+  }
+  /* line 389, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__description {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    line-height: 1.5;
+  }
+  /* line 393, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__link {
+    font-size: 20px;
+  }
+  /* line 397, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .navigation-menu {
+    padding-bottom: 15px;
+  }
+  /* line 399, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .navigation-menu__link {
+    color: #000000;
+  }
+  /* line 401, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .navigation-menu__link:hover {
+    border-bottom-color: #68B738;
+  }
+  /* line 404, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .heading {
+    font-size: 60px;
+  }
+  /* line 408, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .description-section__container {
+    border-bottom: 1px solid #E6E6E6;
+  }
+  /* line 410, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .description-section__steps {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 150px;
+    padding-bottom: 50px;
+  }
+  /* line 418, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step {
+    min-height: 280px;
+    min-width: 250px;
+  }
+  /* line 421, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step__icon {
+    width: 80px;
+    height: 80px;
+  }
+  /* line 424, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step__info {
+    font-size: 16px;
+  }
+  /* line 428, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-section__container {
+    background: linear-gradient(to bottom, #FFFFFF 55%, #F2F2F2 50%);
+    padding-bottom: 15px;
+  }
+  /* line 431, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  /* line 436, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__text {
+    color: #444444;
+  }
+  /* line 438, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__price {
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 70px;
+  }
+  /* line 442, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__caption {
+    margin: 0;
+    align-self: flex-end;
+  }
+  /* line 446, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .location-section__container {
+    padding: 0;
+    min-height: 600px;
+    background: linear-gradient(to bottom, #FFFFFF 200px, transparent 200px), url("/src/img/tablet-location.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* line 453, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .location-section__information {
+    width: 100%;
+    align-self: flex-start;
+    padding: 55px 70px;
+    justify-content: space-between;
+  }
+  /* line 458, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .location-section img {
+    display: none;
+  }
+  /* line 462, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .information__caption {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  /* line 465, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .information__address {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: right;
+  }
+  /* line 470, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .footer {
+    height: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 478, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  /* line 483, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__container {
+    background: linear-gradient(to bottom, #68B738 300px, transparent calc( 100% - 300px));
+    min-height: 480px;
+    padding: 0;
+  }
+  /* line 487, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header-desktop {
+    display: none;
+  }
+  /* line 489, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__content {
+    position: relative;
+  }
+  /* line 491, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__content-info {
+    padding: 0;
+    text-align: center;
+  }
+  /* line 494, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__title {
+    padding-top: 30px;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+  }
+  /* line 499, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__caption {
+    font-size: 14px;
+    margin-bottom: 300px;
+    color: #FFFFFF;
+  }
+  /* line 503, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__content-img {
+    position: absolute;
+    top: 140px;
+    left: 0;
+    z-index: 10;
+  }
+  /* line 508, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header-mobile {
+    width: 100%;
+    display: block;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  /* line 516, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header {
+    padding: 0;
+    background-color: #FFFFFF;
+  }
+  /* line 519, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header-menu {
+    width: 24px;
+    padding-top: 5px;
+  }
+  /* line 523, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .main-section__header-menu span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background-color: black;
+    margin-bottom: 8px;
+  }
+  /* line 531, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .button {
+    position: relative;
+    font-size: 14px;
+    z-index: 50;
+    width: 280px;
+  }
+  /* line 537, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card {
+    display: block;
+    min-width: 100%;
+    height: 100%;
+    padding: 20px 0px 20px 20px;
+  }
+  /* line 542, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  /* line 547, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__subtitle {
+    font-size: 24px;
+  }
+  /* line 549, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__description {
+    font-size: 14px;
+    padding: 0;
+    color: #444444;
+    line-height: 1.4;
+    width: 90%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  /* line 557, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__link {
+    padding-top: 15px;
+    font-size: 16px;
+  }
+  /* line 560, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card__logo-img {
+    max-width: 65px;
+  }
+  /* line 564, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offer-card_tablet {
+    display: none;
+  }
+  /* line 568, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .offers-section__container {
+    margin-bottom: 20px;
+  }
+  /* line 571, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .heading {
+    font-size: 36px;
+  }
+  /* line 576, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .description-section__container {
+    border: none;
+    margin-bottom: 50px;
+  }
+  /* line 579, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .description-section__heading {
+    margin-bottom: 40px;
+  }
+  /* line 581, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .description-section__steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 0;
+  }
+  /* line 587, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step {
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+  }
+  /* line 593, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step__icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  /* line 598, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step__number {
+    display: none;
+  }
+  /* line 600, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .step__info {
+    max-height: 100%;
+    max-width: 200px;
+    padding: 0;
+    font-size: 14px;
+  }
+  /* line 607, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-section__container {
+    background: none;
+    background-color: #F2F2F2;
+    padding-bottom: 40px;
+  }
+  /* line 611, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-section__heading {
+    padding-top: 25px;
+  }
+  /* line 613, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-section__img {
+    display: none;
+  }
+  /* line 615, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-section__img-mobile {
+    display: block;
+  }
+  /* line 619, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__text {
+    font-size: 14px;
+  }
+  /* line 621, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__block {
+    margin: 0 auto 30px 0;
+    width: 125px;
+  }
+  /* line 624, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__block-value {
+    font-size: 24px;
+  }
+  /* line 626, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__block-subvalue {
+    font-size: 12px;
+    width: 50%;
+    text-align: center;
+    background-color: #F2F2F2;
+    bottom: -12px;
+  }
+  /* line 632, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__price {
+    flex-direction: row;
+    gap: 1px;
+    padding: 0px;
+    margin: 0 auto;
+  }
+  /* line 637, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .example-content__caption {
+    font-size: 14px;
+  }
+  /* line 642, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .location-section__container {
+    background: linear-gradient(to bottom, #FFFFFF 115px, transparent 0px), url("/src/img/location-mobile.png");
+  }
+  /* line 644, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .location-section__information {
+    padding: 25px 0px;
+    height: 115px;
+  }
+  /* line 649, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .information__caption {
+    font-size: 16px;
+  }
+  /* line 651, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .information__adress {
+    font-size: 14px;
+  }
+  /* line 653, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .footer {
+    height: 100%;
+  }
+  /* line 655, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .footer__mobile {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  /* line 660, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .footer__logo-row {
+    padding: 40px 0px;
+    border-bottom: 1px solid #D9D9D9;
+    display: flex;
+    justify-content: center;
+  }
+  /* line 665, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .footer__socials-row {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    justify-content: center;
+    border-bottom: 1px solid #D9D9D9;
+  }
+  /* line 672, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .footer__advertisement-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+  /* line 678, ../../../Desktop/cat_energy/src/sass/style.sass */
+  .footer__desktop {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
